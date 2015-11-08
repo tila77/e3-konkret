@@ -1,21 +1,101 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9019"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--e3-konkret-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller title="e3-konkret" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="e3_konkret_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" id="MJg-wQ-Ltb">
+                            <items>
+                                <label alignment="left" text="E3 - Main overview" id="MAO-eN-Llg"/>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="6" bottom="0.0"/>
+                        </group>
+                        <separator alignment="left" id="Jrp-qz-PF5"/>
+                        <group width="1" height="128" alignment="left" layout="vertical" spacing="8" id="wfy-KA-Gsx">
+                            <items>
+                                <group width="1" alignment="left" id="0Lf-2w-WAp">
+                                    <items>
+                                        <group width="0.25" height="35" alignment="left" layout="vertical" id="jIq-gX-yOK">
+                                            <items>
+                                                <imageView width="34" height="34" alignment="left" image="electricEnergy" contentMode="center" id="p2f-vK-vQj"/>
+                                            </items>
+                                        </group>
+                                        <group width="0.5" height="35" alignment="left" layout="vertical" id="S7q-7s-SQe">
+                                            <items>
+                                                <label width="1" alignment="left" verticalAlignment="center" text="reading..." textAlignment="right" id="ZzX-tf-Sf8"/>
+                                            </items>
+                                            <edgeInsets key="margins" left="0.0" right="4" top="0.0" bottom="0.0"/>
+                                        </group>
+                                        <group width="0.25" height="35" alignment="left" id="71o-OL-BNu">
+                                            <items>
+                                                <label alignment="left" verticalAlignment="center" text="kW" id="k85-Gt-hsO"/>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="xfx-1l-Eky">
+                                    <items>
+                                        <group width="0.25" height="35" alignment="left" layout="vertical" id="CTY-zm-P22">
+                                            <items>
+                                                <imageView width="34" height="34" alignment="left" image="photoVoltaic" contentMode="center" id="1Bc-P1-eHg"/>
+                                            </items>
+                                        </group>
+                                        <group width="0.5" height="35" alignment="left" verticalAlignment="center" layout="vertical" id="mJY-9H-lfp">
+                                            <items>
+                                                <label width="1" alignment="left" verticalAlignment="center" text="reading..." textAlignment="right" id="1sq-RT-ERx"/>
+                                            </items>
+                                            <edgeInsets key="margins" left="0.0" right="4" top="0.0" bottom="0.0"/>
+                                        </group>
+                                        <group width="0.25" height="35" alignment="left" id="Tl1-sT-bt4">
+                                            <items>
+                                                <label alignment="left" verticalAlignment="center" text="kW" id="LGl-ap-NCW"/>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="ohH-be-qCw">
+                                    <items>
+                                        <group width="0.25" height="35" alignment="left" layout="vertical" id="sfF-bS-F0X">
+                                            <items>
+                                                <imageView width="34" height="34" alignment="left" image="battery" contentMode="center" id="sJF-uL-WEu"/>
+                                            </items>
+                                        </group>
+                                        <group width="0.5" height="35" alignment="left" id="QOE-4H-cb7">
+                                            <items>
+                                                <label width="1" alignment="left" verticalAlignment="center" text="reading..." textAlignment="right" id="qnM-hP-jeV"/>
+                                            </items>
+                                            <edgeInsets key="margins" left="0.0" right="4" top="0.0" bottom="0.0"/>
+                                        </group>
+                                        <group width="0.25" height="35" alignment="left" id="FTo-rG-lZY">
+                                            <items>
+                                                <label alignment="left" verticalAlignment="center" text="kW" id="fuN-Eb-IUi"/>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="10" bottom="0.0"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="labelBattery" destination="qnM-hP-jeV" id="f6W-ny-rR3"/>
+                        <outlet property="labelElectricEnergy" destination="ZzX-tf-Sf8" id="1eQ-zU-Vrw"/>
+                        <outlet property="labelPhotoVoltaic" destination="1sq-RT-ERx" id="lFZ-Mf-icP"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="235" y="347"/>
+            <point key="canvasLocation" x="235" y="347.25"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
             <objects>
-                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModuleProvider="target">
+                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModule="e3_konkret_WatchKit_App" customModuleProvider="target">
                     <items>
                         <group alignment="left" id="t8f-Gd-c4y"/>
                         <group alignment="left" id="uCw-4Q-Ouw"/>
@@ -44,7 +124,7 @@
         <!--Notification Controller-->
         <scene sceneID="KIl-fV-djm">
             <objects>
-                <controller id="gdX-wl-uQE" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="gdX-wl-uQE" customClass="NotificationController" customModule="e3_konkret_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="553" y="1001"/>
         </scene>

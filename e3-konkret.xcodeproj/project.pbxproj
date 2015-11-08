@@ -14,7 +14,6 @@
 		21403DC21BEFE62C008DD9BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21403DC01BEFE62C008DD9BF /* LaunchScreen.storyboard */; };
 		21403DC71BEFE62C008DD9BF /* e3-konkret WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 21403DC61BEFE62C008DD9BF /* e3-konkret WatchKit App.app */; };
 		21403DCD1BEFE62C008DD9BF /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21403DCB1BEFE62C008DD9BF /* Interface.storyboard */; };
-		21403DCF1BEFE62C008DD9BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21403DCE1BEFE62C008DD9BF /* Assets.xcassets */; };
 		21403DD61BEFE62C008DD9BF /* e3-konkret WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 21403DD51BEFE62C008DD9BF /* e3-konkret WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		21403DDD1BEFE62C008DD9BF /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21403DDC1BEFE62C008DD9BF /* InterfaceController.swift */; };
 		21403DDF1BEFE62C008DD9BF /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21403DDE1BEFE62C008DD9BF /* ExtensionDelegate.swift */; };
@@ -22,6 +21,8 @@
 		21403DE31BEFE62C008DD9BF /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21403DE21BEFE62C008DD9BF /* GlanceController.swift */; };
 		21403DE51BEFE62C008DD9BF /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21403DE41BEFE62C008DD9BF /* ComplicationController.swift */; };
 		21403DE71BEFE62C008DD9BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21403DE61BEFE62C008DD9BF /* Assets.xcassets */; };
+		21403DF81BEFF170008DD9BF /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21403DF71BEFF170008DD9BF /* SwiftyJSON.swift */; };
+		21403DFA1BEFF43B008DD9BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21403DF91BEFF43B008DD9BF /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +77,6 @@
 		21403DC31BEFE62C008DD9BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21403DC61BEFE62C008DD9BF /* e3-konkret WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "e3-konkret WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21403DCC1BEFE62C008DD9BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		21403DCE1BEFE62C008DD9BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21403DD01BEFE62C008DD9BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21403DD51BEFE62C008DD9BF /* e3-konkret WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "e3-konkret WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21403DDB1BEFE62C008DD9BF /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
@@ -87,6 +87,8 @@
 		21403DE41BEFE62C008DD9BF /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		21403DE61BEFE62C008DD9BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21403DE81BEFE62C008DD9BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21403DF71BEFF170008DD9BF /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		21403DF91BEFF43B008DD9BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,7 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				21403DCB1BEFE62C008DD9BF /* Interface.storyboard */,
-				21403DCE1BEFE62C008DD9BF /* Assets.xcassets */,
+				21403DF91BEFF43B008DD9BF /* Assets.xcassets */,
 				21403DD01BEFE62C008DD9BF /* Info.plist */,
 			);
 			path = "e3-konkret WatchKit App";
@@ -153,6 +155,7 @@
 		21403DD91BEFE62C008DD9BF /* e3-konkret WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				21403DF71BEFF170008DD9BF /* SwiftyJSON.swift */,
 				21403DDC1BEFE62C008DD9BF /* InterfaceController.swift */,
 				21403DDE1BEFE62C008DD9BF /* ExtensionDelegate.swift */,
 				21403DE01BEFE62C008DD9BF /* NotificationController.swift */,
@@ -285,7 +288,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21403DCF1BEFE62C008DD9BF /* Assets.xcassets in Resources */,
+				21403DFA1BEFF43B008DD9BF /* Assets.xcassets in Resources */,
 				21403DCD1BEFE62C008DD9BF /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,6 +320,7 @@
 				21403DE11BEFE62C008DD9BF /* NotificationController.swift in Sources */,
 				21403DDF1BEFE62C008DD9BF /* ExtensionDelegate.swift in Sources */,
 				21403DE51BEFE62C008DD9BF /* ComplicationController.swift in Sources */,
+				21403DF81BEFF170008DD9BF /* SwiftyJSON.swift in Sources */,
 				21403DDD1BEFE62C008DD9BF /* InterfaceController.swift in Sources */,
 				21403DE31BEFE62C008DD9BF /* GlanceController.swift in Sources */,
 			);
@@ -551,6 +555,7 @@
 				21403DED1BEFE62C008DD9BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		21403DEF1BEFE62C008DD9BF /* Build configuration list for PBXNativeTarget "e3-konkret WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -559,6 +564,7 @@
 				21403DF11BEFE62C008DD9BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		21403DF31BEFE62C008DD9BF /* Build configuration list for PBXNativeTarget "e3-konkret" */ = {
 			isa = XCConfigurationList;
@@ -567,6 +573,7 @@
 				21403DF51BEFE62C008DD9BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
