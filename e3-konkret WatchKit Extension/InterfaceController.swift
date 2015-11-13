@@ -40,6 +40,10 @@ class InterfaceController: WKInterfaceController {
         // Configure interface objects here.
         
         print("start application...")
+        
+        labelElectricEnergy.setText("---")
+        labelPhotoVoltaic.setText("---")
+        labelBattery.setText("---")
     }
 
     override func willActivate() {
@@ -88,8 +92,11 @@ class InterfaceController: WKInterfaceController {
             } else {
                 self.update(Labels.electricEnergy, readValue: "0")
             }
+            print("task 1 ended...")
         }
+        print("task 1 start...")
         taskElectricEnergy.resume()
+        print("task 1 startet...")
         
         let taskPhotoVoltaic = NSURLSession.sharedSession().dataTaskWithURL(endpoint2!) {(data, response, error) in
             let jsonSwift = JSON(data: data!)
@@ -109,8 +116,11 @@ class InterfaceController: WKInterfaceController {
             } else {
                 self.update(Labels.photoVoltaic, readValue: "0")
             }
+            print("task 2 ended...")
         }
+        print("task 2 start...")
         taskPhotoVoltaic.resume()
+        print("task 2 started...")
         
         let taskBattery = NSURLSession.sharedSession().dataTaskWithURL(endpoint3!) {(data, response, error) in
             let jsonSwift = JSON(data: data!)
@@ -130,8 +140,11 @@ class InterfaceController: WKInterfaceController {
             } else {
                 self.update(Labels.battery, readValue: "0")
             }
+            print("task 3 ended...")
         }
+        print("task 3 start...")
         taskBattery.resume()
+        print("task 3 started...")
 
         
         // old version
@@ -157,7 +170,7 @@ class InterfaceController: WKInterfaceController {
         
         //let readValue = getDemoData()
         
-        print("update with value: ", readValue, " for label ", label)
+        //print("update with value: ", readValue, " for label ", label)
         
         switch label {
         case Labels.electricEnergy:
